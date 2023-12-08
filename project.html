@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Punkty</title>
+</head>
+<body>
+    
+    <div id="pobieranie-danych">
+        <button type="button" onclick="wczytajDaneJSON()">Pobierz dane JSON</button>
+    </div>
+
+    <div id="generowanie-box">
+        
+    </div>
+
+    <p id="informacja-o-punktach">Aktualna suma punktów: 100</p>
+
+    <script>
+        let daneJSON = {"kary": [{}]};
+        const zapytanieHTTP = new XMLHttpRequest();
+        const adresURL = "kary.json";
+
+        zapytanieHTTP.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                daneJSON = JSON.parse(this.responseText);
+            }
+        };
+        zapytanieHTTP.open("GET", adresURL, true);
+        zapytanieHTTP.send();
+
+        function wczytajDaneJSON() {
+            const boxGenerowania = document.getElementById("generowanie-box");
+            const boxPobierania = document.getElementById("pobieranie-danych");
+            let opcjeNegatywne = "";
+            let opcjePozytywne = "";
+
+            for(let i = 0; i < daneJSON.kary.length; i++) {
+                opcjeNegatywne += `<option value="${daneJSON.kary[i].value}">${daneJSON.kary[i].nazwa}</option>`;
+            }
+
+            for(let i = 0; i < daneJSON.plusy.length; i++) {
+                opcjePozytywne += `<option value="${daneJSON.plusy[i].value}">${daneJSON.plusy[i].nazwa}</option>`;
+            }
+
+            boxGenerowania.innerHTML = `<select name="neg" id="negatyw">${opcjeNegatywne}</select>`;
+            boxGenerowania.innerHTML += `<select name="poz" id="pozytyw">${opcjePozytywne}`;
+            boxPobierania.innerHTML = `<button type="button" onclick="wczytajDaneJSON()">Pobierz dane JSON</button>`;
+            boxPobierania.innerHTML += `<button type="button" onclick="usunWartosc()">Usuń NEG</button>`;
+            boxPobierania.innerHTML += `<button type="button" onclick="dodajWartosc()">Dodaj POS</button>`;
+        }
+
+        let sumaPunktow = 100;
+
+        function usunWartosc() {
+            let wartosc = document.getElementById("informacja-o-punktach");
+            let listaNegatywna = document.getElementById("negatyw");
+            sumaPunktow -= parseInt(listaNegatywna.value);
+            wartosc.innerHTML = `Aktualna suma punktów: ${sumaPunktow}`;
+        }
+
+        function dodajWartosc() {
+            let wartosc = document.getElementById("informacja-o-punktach");
+            let listaPozytywna = document.getElementById("pozytyw");
+            sumaPunktow -= parseInt(listaPozytywna.value);
+            wartosc.innerHTML = `Aktualna suma punktów: ${sumaPunktow}`;
+        }
+    </script>
+</body>
+</html>

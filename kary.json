@@ -1,0 +1,142 @@
+{
+    "kary": [
+        {
+            "nazwa": "Nagana wychowawcy klasy ",
+            "value": "100"
+        },
+        {
+            "nazwa": "Upomnienie wychowawcy klasy",
+            "value": "50"
+        },
+        {
+            "nazwa": "Uwaga za naganne zachowanie",
+            "value": "15"
+        },
+        {
+            "nazwa": "Podrabianie dokumentów szkolnych",
+            "value": "100"
+        },
+        {
+            "nazwa": "Palenie papierosów ",
+            "value": "50"
+        },
+        {
+            "nazwa": "Wandalizm",
+            "value": "20"
+        },
+        {
+            "nazwa": "Aroganckie zachowanie",
+            "value": "50"
+        },
+        {
+            "nazwa": "Zaczepki",
+            "value": "20"
+        },
+        {
+            "nazwa": "Wulgarne słownictwo",
+            "value": "20"
+        },
+        {
+            "nazwa": "Niewykonywanie poleceń",
+            "value": "20"
+        },
+        {
+            "nazwa": "Niewywiązywanie się ze zobowiązań",
+            "value": "20"
+        },
+        {
+            "nazwa": "Nieprzestrzeganie przepisów BHP ",
+            "value": "15"
+        },
+        {
+            "nazwa": "Za każdą opuszczoną godzinę",
+            "value": "3"
+        },
+        {
+            "nazwa": "Za zbiorową ucieczkę z zajęć lekcyjnych ",
+            "value": "20"
+        }
+    ],
+    "plusy": [
+        {
+            "nazwa": "Udział w olimpiadzie przedmiotowej (etap szkolny)",
+            "value": "-10"
+        },
+        {
+            "nazwa": "Udział w olimpiadzie przedmiotowej (etap miejski)",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Udział w olimpiadzie przedmiotowej (etap okregowy)",
+            "value": "-50"
+        },
+        {
+            "nazwa": "Udział w olimpiadzie przedmiotowej (etap ogolnopolski)",
+            "value": "-100"
+        },
+        {
+            "nazwa": "Udział w konkursie szkolnym (final)",
+            "value": "-20"
+        },
+        {
+            "nazwa": "Udział w konkursie szkolnym (podium)",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Udział w konkursie pozaszkolnym (etap szkolny)",
+            "value": "50"
+        },
+        {
+            "nazwa": "Udział w konkursie pozaszkolnym (etap szkolny)",
+            "value": "-10"
+        },
+        {
+            "nazwa": "Udział w konkursie pozaszkolnym (etap miejski)",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Udział w konkursie pozaszkolnym (etap okregowy)",
+            "value": "-40"
+        },
+        {
+            "nazwa": "Udział w konkursie pozaszkolnym (etap ogolnopolski)",
+            "value": "-100"
+        },
+        {
+            "nazwa": "Funkcje społeczne w klasie ",
+            "value": "-20"
+        },
+        {
+            "nazwa": "Uczestnictwo w zorganizowanych zajęciach pozalekcyjnych",
+            "value": "-20"
+        },
+        {
+            "nazwa": "Honorowe krwiodawstwo, wolontariat ",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Frekwencja od 95 % ",
+            "value": "-50"
+        },
+        {
+            "nazwa": "Frekwencja od 98 % ",
+            "value": "-70"
+        },
+        {
+            "nazwa": "Do dyspozycji wychowawców klas programowo najwyższych po konsultacji z zespołem nauczycieli ",
+            "value": "-50"
+        },
+        {
+            "nazwa": "Stosunek do obowiązków szkolnych po konsultacji z zespołem nauczycieli",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Kultura osobista po konsultacji z zespołem nauczycieli",
+            "value": "-30"
+        },
+        {
+            "nazwa": "Pomoc koleżeńska uzgodniona z wychowawcą klasy",
+            "value": "-20"
+        }
+    ]
+}
